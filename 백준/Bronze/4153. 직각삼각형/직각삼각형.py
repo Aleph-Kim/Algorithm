@@ -4,13 +4,9 @@ while True:
     if sum(arr) == 0:
         break
 
-    a = min(arr)
-    c = max(arr)
-    arr.remove(a)
-    arr.remove(c)
-    b = arr[0]
+    arr.sort()
     
-    if a ** 2 + b ** 2 == c ** 2:
+    if arr[0] ** 2 + arr[1] ** 2 == arr[2] ** 2:
         print('right')
     else:
         print('wrong')
